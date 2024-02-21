@@ -1,7 +1,7 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 
-export const inter = Inter({subsets: ['latin']});
+export const inter = inter({subsets: ['latin']});
 
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
