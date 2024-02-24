@@ -4,7 +4,6 @@ import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
-import {fetchCardData} from "@/app/lib/data";
 
 const Page = () => {
     return (
