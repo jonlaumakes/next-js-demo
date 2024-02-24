@@ -1,3 +1,4 @@
+import {ReactElement} from 'react';
 import Image from 'next/image';
 import { UpdateInvoice, DeleteInvoice } from '@/app/ui/invoices/buttons';
 import InvoiceStatus from '@/app/ui/invoices/status';
@@ -11,7 +12,7 @@ export default async function InvoicesTable({
 }: {
   query: string;
   currentPage: number;
-}) {
+}): Promise<ReactElement> {
   const invoices = await fetchFilteredInvoices(query, currentPage);
 
   return (

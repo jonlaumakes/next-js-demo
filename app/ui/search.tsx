@@ -12,6 +12,7 @@ const Search = ({ placeholder }: { placeholder: string }) => {
 
   const handleSearch = useDebouncedCallback((term: string) => {
     const params = new URLSearchParams();
+    params.set('page', '1');
   
     if (term.length >= 3) {
       console.log('valid search', pathname);
@@ -21,6 +22,7 @@ const Search = ({ placeholder }: { placeholder: string }) => {
       params.delete('query');
       replace(`${pathname}?${params.toString()}`)
     }
+    
   }, 300);
 
   // uncontrolled: native input will manage it's own state
