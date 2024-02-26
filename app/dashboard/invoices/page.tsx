@@ -20,12 +20,10 @@ const Page = async ({
   const totalPages = await fetchInvoicesPages(query);
 
   // !!!! ======== Difference from Client Side React ========!!!!
-  
   // state is lifted to the server using URL search params
   // Search and Paginator are client side components and use 'global' URL search params to drive navigation
   // Table is a server component (it needs to make requests to data).
   // Table uses 'searchParams' as a server component.  Changes will be made from client setting of 'useSearchParams'.  See 'createPageURL'
-  
   // !!!! ======== Difference from Client Side React ========!!!!
 
     return (

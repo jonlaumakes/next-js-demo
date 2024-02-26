@@ -59,6 +59,7 @@ export default function EditInvoiceForm({
           </label>
           <div className="relative mt-2 rounded-md">
             <div className="relative">
+              {/* type can be "hidden", but values will appear as full text in HTML source */}
               <input
                 id="amount"
                 name="amount"
