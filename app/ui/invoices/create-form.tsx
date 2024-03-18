@@ -1,7 +1,8 @@
 // needed for hooks (useFormState)
 'use client';
-import Link from 'next/link';
+
 import { useFormState } from 'react-dom';
+import Link from 'next/link';
 import {
   CheckIcon,
   ClockIcon,
